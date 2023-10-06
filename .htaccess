@@ -4,3 +4,4 @@
   RewriteCond %{HTTP_HOST} ^www.carpetcleaningsdpro.com$
   RewriteRule (.*)$ https://carpetcleaningsdpro.com/$1 [R=301,L]
 </IfModule>
+
