@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^carpetcleaningsdpro.com$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.carpetcleaningsdpro.com$
+  RewriteRule (.*)$ https://carpetcleaningsdpro.com/$1 [R=301,L]
+</IfModule>

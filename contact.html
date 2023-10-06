@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="style/countUp.css" rel="stylesheet" type="text/css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact-Carpet Cleaning</title>
+    <script src="script/contactEmailjs.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("QZ-FwUQStvQDi1wdO");
+      })();
+    </script>
+
+</head>
+<body>
+   <div>
+          <!-- Start Nav bar -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="about.html" > About</a></li>
+            <li><a href="service.html"> Services </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost normal-case text-xl">Carpet Cleaning Services</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="about.html" > About</a></li>
+          <li><a href="service.html"> Services </a></li>
+          <li><a href="contact.html"> Contact </a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Call (919)123-4567</a>
+      </div>
+    </div>
+    <!-- End Nav bar -->
+    <!-- Start Contact sectin-->
+     <section class="hero min-h-screen bg-base-200">
+        <div class="card flex-shrink-0 w-full shadow-2xl bg-base-100 container mx-auto">
+          <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Name</span>
+              </label>
+              <input id="name" type="name" placeholder="name" class="input input-bordered" required />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Email</span>
+              </label>
+              <input id="email" type="email" placeholder="email" class="input input-bordered" required />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Short SMS</span>
+              </label>
+              <!-- lg -->
+              <textarea id="message" placeholder="Write some sms get free cleaning estimet" class="textarea textarea-bordered textarea-lg w-full" ></textarea>
+            </div>
+          
+            <div class="form-control mt-6">
+              <button  onclick="sendMail()" class="btn btn-primary">Sent</button>
+            </div>
+          </form>
+        </div>
+         
+     </section>
+     <footer id="dynamic-footer" class=" py-4">
+      <!-- Footer Content Will Be Injected Here Dynamically -->
+    </footer>
+   </div> 
+  </body>
+  
+  <script src="script/footer.js"></script>
+</html>
