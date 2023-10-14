@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const footer = document.getElementById('dynamic-footer');
 
     // Dynamically generate footer content using map
-    const footerContent = `
+    const footerContent =
+    `
     <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
         <nav class="grid grid-flow-col gap-4">
             <a href="index.html" class="link link-hover"> Home </a> 

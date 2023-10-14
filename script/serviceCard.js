@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Service JSON data
     const serviceData = [
         {id: 1, 
-            imgUrl:'../images/carpet-cleaning-service.jpg',
-            more:'carpetcleaning.html',
+            imgUrl:'images/carpet-cleaning-service.jpg',
+            more:'services/carpetcleaning.html',
             title: 'Carpet Cleaning Service in San Diego, CA', 
             content: 'A well-maintained carpet can transform the ambiance of your home, making it warm, inviting, and comfortable. In San Diego, California, where sunny days and outdoor activities are abundant, keeping your carpets clean is essential to maintain a healthy indoor environment. Thankfully, professional carpet cleaning services in San Diego can help you achieve that pristine look and feel for your carpets. In this article, we will explore the importance of carpet cleaning, the benefits of professional services, and how you can find the best carpet cleaning service in San Diego.' 
         },
