@@ -31,5 +31,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Insert the generated HTML into the card container
-    commentCardContainer.innerHTML = commentCard.join('');
+    commentCardContainer.innerHTML = commentCard.join(' ');
 });
